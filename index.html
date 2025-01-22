@@ -4,13 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width">
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Sea Monster Crowdfunding</title>
   </head>
 
   <body>
     <!-- header row with logo -->
     <div class="header">
-        <img id="tentacles" src="assets/tentacles.png">
+        <img id="tentacles" src="assets/tentacles.png" alt="Sea Monster Logo">
         <h1 class="header-text">Sea Monster Crowdfunding</h1>
+        <!-- Navigation Menu -->
+        <nav id="navbar">
+            <a href="#description-container">About Us</a>
+            <a href="#top-games">Top Games</a>
+            <a href="#games-container">Our Games</a>
+        </nav>
     </div>
 
     <!-- background info about company -->
@@ -24,18 +31,15 @@
     <div class="stats-container">
         <div class="stats-card">
             <h3>Individual Contributions</h3>
-            <p id="num-contributions">
-            </p>
+            <p id="num-contributions"></p>
         </div>
         <div class="stats-card">
             <h3>Total Raised</h3>
-            <p id="total-raised">
-            </p>
+            <p id="total-raised"></p>
         </div>
         <div class="stats-card">
             <h3>Total Number of Games</h3>
-            <p id="num-games">
-            </p>
+            <p id="num-games"></p>
         </div>
     </div>
     <div class="stats-container" id="top-games">
@@ -47,17 +51,35 @@
         </div>
     </div>
 
+    <!-- Search Bar -->
+    <div id="search-container">
+        <input type="text" id="search-bar" placeholder="Search for a game..." />
+        <button id="search-button">Search</button>
+    </div>
+
+    <!-- Sort Dropdown -->
+    <div id="sort-container">
+        <select id="sort-options">
+            <option value="funding">Sort by Funding</option>
+            <option value="name">Sort by Name</option>
+            <option value="backers">Sort by Backers</option>
+        </select>
+        <button id="sort-button">Sort</button>
+    </div>
+
     <!-- list of games funded by Sea Monster -->
     <h2>Our Games</h2>
-    <p>Check out each of our games below!</p>
     <div id="button-container">
         <button id="unfunded-btn">Show Unfunded Only</button>
         <button id="funded-btn">Show Funded Only</button>
         <button id="all-btn">Show All Games</button>
     </div>
-    <div id="games-container">
+    <div id="games-container"></div>
 
-    </div>
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Sea Monster Crowdfunding. All rights reserved.
+    </footer>
 
     <script type="module" src="index.js"></script>
   </body>
