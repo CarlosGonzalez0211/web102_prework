@@ -145,7 +145,7 @@ button {
     padding: 10px 20px;
     margin: 10px;
     border-radius: 7px;
-    background-color: #9c27b0; /* Button purple color */
+    background-color: #9c27b0;
     color: #ffffff;
     font-size: 1rem;
     cursor: pointer;
@@ -153,7 +153,7 @@ button {
 }
 
 button:hover {
-    background-color: #7b1fa2; /* Darker purple for hover */
+    background-color: #7b1fa2;
     transform: scale(1.1);
 }
 
